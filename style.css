@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+}
+
+.logo-dsk {
+  display: none;
+}
+
+.logo-mb span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.open {
+  color: #e67e22;
+  font-size: 28px;
+}
+
+.nav-items {
+  display: none;
+}
+
+.intro-container {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: url("./author-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.intro-text {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.name {
+  font-weight: 700;
+  color: #e67e22;
+}
+
+.action-btn {
+  display: flex;
+}
+
+.btn {
+  padding: 0.8rem 0.5rem;
+  font-size: 1.2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 100ms linear;
+  margin-right: 2rem;
+}
+
+.btn-about {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn-projects {
+  border: 1px solid #95a5a6;
+  background-color: black;
+  color: white;
+}
+
+.btn-about:hover {
+  background-color: black;
+  border: 1px solid #27ae60;
+}
+
+.btn-projects:hover {
+  border: 1px solid #27ae60;
+}
+
+.btn:focus {
+  border-width: 2px;
+}
+
+@media (min-width: 400px) {
+  .intro-text {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .logo-dsk {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .logo-dsk span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .logo-mb {
+    display: none;
+  }
+
+  .intro-container {
+    flex-flow: row;
+    align-items: center;
+    background: url("./author.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro {
+    margin-top: -9rem;
+    margin-left: 2rem;
+  }
+
+  .intro-text {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .action-btn {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .ham-icons-open {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .items-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .items-list li {
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .items-list li:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
