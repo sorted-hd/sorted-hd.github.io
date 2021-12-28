@@ -25,10 +25,10 @@
         </div>
         <div class="nav-items">
           <ul class="items-list">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contacts</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </div>
       </nav>
@@ -42,34 +42,49 @@
         </div>
         <div class="action-btn">
           <button class="btn btn-about">About Me</button>
-          <button class="btn btn-projects">View My Work</button>
+          <button
+            onClick="document.getElementById('projects').scrollIntoView()"
+            class="btn btn-projects"
+          >
+            View My Work
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-container">
+    <section id="projects" class="projects-container">
       <div class="projects-card">
         <div class="card">
           <span class="card-title">Q-Trip</span>
-          <span class="card-desc">Explore places and live free</span>
-          <img src="./hqpark.png" />
+          <span class="card-desc">Explore the world with fantastic views</span>
+          <img src="./qtrip.png" />
         </div>
         <div class="card">
-          <span class="card-title">Q-Trip</span>
-          <span class="card-desc">Explore places and live free</span>
-          <img src="./hqpark.png" />
-        </div>
-        <div class="card">
-          <span class="card-title">Q-Trip</span>
-          <span class="card-desc">Explore places and live free</span>
-          <img src="./hqpark.png" />
-        </div>
-        <div class="card">
-          <span class="card-title">Q-Trip</span>
-          <span class="card-desc">Explore places and live free</span>
-          <img src="./hqpark.png" />
+          <span class="card-title">Tweet-App</span>
+          <span class="card-desc">Post your ideas.</span>
+          <img src="./tweet-app.png" />
         </div>
       </div>
+      <div class="email-holder">
+        <span class="text-email">Let's work together!</span>
+        <span class="text-email"
+          ><a href="mailto:hdubey71@gmail.com">👋hdubey71@gmail.com</a></span
+        >
+      </div>
     </section>
+
+    <footer>
+      <div id="contacts" class="social">
+        <a href="#"
+          ><i class="fa fa-linkedin fa-2x" style="color: blue"></i> LinkedIn</a
+        >
+        <a href="#"
+          ><i class="fa fa-github fa-2x" style="color: white"></i> GitHub</a
+        >
+      </div>
+      <div class="message">
+        <span class="footer-copy">Made With ❤️ By Himanshu.</span>
+      </div>
+    </footer>
   </body>
 </html>

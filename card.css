@@ -49,7 +49,7 @@
 }
 
 .card:hover {
-  background-color: red;
+  background-color: #3498db;
   transform: scale(0.98);
 }
 
