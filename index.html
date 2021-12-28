@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finding Falcon</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./card.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="logo-dsk">
+          <span>Himanshu.</span>
+        </div>
+        <div class="logo-mb">
+          <span>HD.</span>
+        </div>
+        <div class="ham-icons-open">
+          <span><i class="open fa fa-align-right fa-2x"></i></span>
+        </div>
+        <div class="nav-items">
+          <ul class="items-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="intro-container">
+      <div class="container-in">
+        <div class="intro">
+          <p class="intro-text">Hi I'm Himanshu Dubey.</p>
+          <p class="designation">Full Stack Developer</p>
+        </div>
+        <div class="action-btn">
+          <button class="btn btn-about">About Me</button>
+          <button
+            onClick="document.getElementById('projects').scrollIntoView()"
+            class="btn btn-projects"
+          >
+            View My Work
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-container">
+      <div class="projects-card">
+        <div class="card">
+          <span class="card-title">Q-Trip</span>
+          <span class="card-desc">Explore the world with fantastic views</span>
+          <img src="./qtrip.png" />
+        </div>
+        <div class="card">
+          <span class="card-title">Tweet-App</span>
+          <span class="card-desc">Post your ideas.</span>
+          <img src="./tweet-app.png" />
+        </div>
+      </div>
+      <div class="email-holder">
+        <span class="text-email">Let's work together!</span>
+        <span class="text-email"
+          ><a href="mailto:hdubey71@gmail.com">👋hdubey71@gmail.com</a></span
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div id="contacts" class="social">
+        <a href="#"
+          ><i class="fa fa-linkedin fa-2x" style="color: blue"></i> LinkedIn</a
+        >
+        <a href="#"
+          ><i class="fa fa-github fa-2x" style="color: white"></i> GitHub</a
+        >
+      </div>
+      <div class="message">
+        <span class="footer-copy">Made With ❤️ By Himanshu.</span>
+      </div>
+    </footer>
+  </body>
+</html>
