@@ -94,7 +94,7 @@ html {
 
 .btn {
   min-width: 7rem;
-  max-width: 12rem;
+  max-width: 15rem;
   height: 48px;
   padding: 0.3rem 0.6rem;
   font-size: 0.85rem;
@@ -147,6 +147,88 @@ html {
   color: white;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.about-me__container {
+  width: 100%;
+  background-color: black;
+  padding: 2rem;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+}
+
+.about-me__desc {
+  display: flex;
+  flex-flow: column;
+}
+
+.about-me__title {
+  color: #ffffff6e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-me__summary {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 125%;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: inline-flex;
+  margin: auto;
+  margin-top: 2rem;
+  width: 100%;
+  flex: 0 1 100%;
+  height: 4rem;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff87;
+  background-color: black;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container i {
+  margin-top: 2rem;
+  width: 100%;
+  height: 80px;
+  flex: 0 1 100%;
+  color: #ffffff87;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms ease-in-out;
+}
+
+.tech {
+  color: #ffffff87;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 footer {
@@ -254,6 +336,15 @@ footer {
 
   .text-email a {
     font-size: 1.5rem;
+  }
+
+  .skills-container i {
+    margin-left: 1rem;
+    flex: 0 1 10%;
+  }
+  .tech {
+    margin-left: 1rem;
+    width: auto;
   }
 
   footer {
