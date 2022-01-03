@@ -4,6 +4,7 @@
     <title>Finding Falcon</title>
     <link href="./style.css" rel="stylesheet" />
     <link href="./card.css" rel="stylesheet" />
+    <link href="./about.css" rel="stylesheet" />
     <link rel="icon" href="./title.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -29,7 +30,7 @@
         <div class="nav-items">
           <ul class="items-list">
             <li><a href="/">Home</a></li>
-            <li><a href="./about.html">About Me</a></li>
+            <li><a href="/">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
@@ -44,12 +45,7 @@
           <p class="designation">Full Stack Developer</p>
         </div>
         <div class="action-btn">
-          <button
-            onClick="window.location.href='./about.html'"
-            class="btn btn-about"
-          >
-            About Me
-          </button>
+          <button class="btn btn-about">About Me</button>
           <button
             onClick="document.getElementById('projects').scrollIntoView()"
             class="btn btn-projects"
@@ -61,32 +57,24 @@
     </section>
 
     <section id="projects" class="about-me__container">
-      <div class="skills-container">
-        <!-- <span class="skills">Skills</span> -->
-        <i class="fab fa-html5 fa-4x"></i>
-        <i class="fab fa-css3 fa-4x"></i>
-        <i class="fab fa-react fa-4x"></i>
-        <i class="fab fa-js-square fa-4x"></i>
-        <i class="fab fa-node fa-4x"></i>
-        <h3 class="tech" style="color: #ffffff87">expressJS</h3>
-        <h3 class="tech" style="color: #ffffff87">mongoDB</h3>
-        <i class="fab fa-git fa-4x" style="color: #ffffff87"></i>
+      <div class="about-me__content-intro">
+        <div class="about-me__name">
+          <span> Himanshu Dubey </span>
+        </div>
+        <div class="about-me__intro">
+          <p>
+            Experienced software engineer with a passion for developing
+            innovative programs and softwares. Graduated in the field of
+            computer science and engineering and having sound knowledge of
+            frontend and backend technologies including ReactJs, Spring Boot,
+            NodeJs, Java, JavaScript.
+          </p>
+          <button class="btn btn-about">View Resume</button>
+        </div>
       </div>
     </section>
 
     <section class="projects-container">
-      <div class="projects-card">
-        <div class="card">
-          <span class="card-title">Q-Trip</span>
-          <span class="card-desc">Explore the world with fantastic views</span>
-          <img src="./qtrip.png" />
-        </div>
-        <div class="card">
-          <span class="card-title">Tweet-App</span>
-          <span class="card-desc">Post your ideas.</span>
-          <img src="./tweet-app.png" />
-        </div>
-      </div>
       <div class="email-holder">
         <span class="text-email">Let's work together!</span>
         <span class="text-email"

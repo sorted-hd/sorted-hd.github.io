@@ -1,0 +1,43 @@
+.about-me__container {
+  padding-bottom: 5rem;
+}
+.about-me__content-intro {
+  display: flex;
+  flex-flow: column;
+}
+
+.about-me__name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-me__intro {
+  display: flex;
+  flex-flow: column;
+}
+
+.about-me__intro p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 720px) {
+  .about-me__content-intro {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .about-me__name {
+    flex: 0 1 30%;
+  }
+
+  .about-me__intro {
+    flex: 0 1 60%;
+  }
+  .about-me__intro p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
