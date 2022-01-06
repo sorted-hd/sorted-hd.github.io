@@ -1,0 +1,137 @@
+header {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header nav {
+  display: none;
+}
+
+.brand a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+#brand-desktop {
+  display: none;
+}
+
+#hamburger-icon {
+  margin-right: 1rem;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  background-color: black;
+  display: none;
+  position: absolute;
+  top: 6vh;
+  left: 0;
+  height: calc(100vh - 6vh);
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0%;
+}
+
+.mobile-menu li {
+  margin: 1.5rem 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  transition: all 400ms ease-in;
+}
+
+.anim-a {
+  animation-name: roll-over;
+  animation-duration: 700ms;
+}
+
+@keyframes roll-over {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #hamburger-icon {
+    display: none;
+  }
+
+  #brand-desktop {
+    display: block;
+  }
+
+  #brand-mobile {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  ul a {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 2rem;
+    color: white;
+  }
+
+  ul a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

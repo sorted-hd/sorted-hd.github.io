@@ -4,6 +4,7 @@
     <title>Finding Falcon</title>
     <link href="./style.css" rel="stylesheet" />
     <link href="./card.css" rel="stylesheet" />
+    <link href="./navbar.css" rel="stylesheet" />
     <link rel="icon" href="./title.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -16,25 +17,27 @@
 
   <body>
     <header>
-      <nav class="navigation">
-        <div class="logo-dsk">
-          <span>Himanshu.</span>
-        </div>
-        <div class="logo-mb">
-          <span>HD.</span>
-        </div>
-        <div class="ham-icons-open">
-          <span><i class="open fa fa-align-right fa-2x"></i></span>
-        </div>
-        <div class="nav-items">
-          <ul class="items-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </div>
+      <div id="brand-mobile" class="brand"><a>HD.</a></div>
+      <div id="brand-desktop" class="brand"><a>Himanshu.</a></div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
       </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="intro-container">
@@ -97,10 +100,10 @@
 
     <footer>
       <div id="contacts" class="social">
-        <a href="#"
+        <a href="https://www.linkedin.com/in/h-d/" target="__blank"
           ><i class="fab fa-linkedin fa-2x" style="color: blue"></i> LinkedIn</a
         >
-        <a href="#"
+        <a href="https://github.com/sorted-hd" target="__blank"
           ><i class="fab fa-github fa-2x" style="color: white"></i> GitHub</a
         >
       </div>
@@ -108,5 +111,7 @@
         <span class="footer-copy">Made With ❤️ By Himanshu.</span>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
