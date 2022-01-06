@@ -40,23 +40,7 @@
         </ul>
       </div>
     </header>
-    <section class="intro-container">
-      <div class="container-in">
-        <div class="intro">
-          <p class="intro-text">Hi I'm Himanshu Dubey.</p>
-          <p class="designation">Full Stack Developer</p>
-        </div>
-        <div class="action-btn">
-          <button class="btn btn-about">About Me</button>
-          <button
-            onClick="document.getElementById('projects').scrollIntoView()"
-            class="btn btn-projects"
-          >
-            View My Work
-          </button>
-        </div>
-      </div>
-    </section>
+    <section class="hero-image"></section>
 
     <section class="about-me__container">
       <div class="about-me__content-intro">
@@ -71,7 +55,9 @@
             frontend and backend technologies including ReactJs, Spring Boot,
             NodeJs, Java, JavaScript.
           </p>
-          <button class="btn btn-about">View Resume</button>
+          <button onclick="viewResumeHandler(this)" class="btn btn-about">
+            View Resume
+          </button>
         </div>
       </div>
     </section>
@@ -87,10 +73,10 @@
 
     <footer>
       <div id="contacts" class="social">
-        <a href="#"
+        <a href="https://www.linkedin.com/in/h-d/" target="__blank"
           ><i class="fab fa-linkedin fa-2x" style="color: blue"></i> LinkedIn</a
         >
-        <a href="#"
+        <a href="https://github.com/sorted-hd" target="__blank"
           ><i class="fab fa-github fa-2x" style="color: white"></i> GitHub</a
         >
       </div>
