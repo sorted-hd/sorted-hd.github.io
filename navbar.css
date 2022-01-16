@@ -100,7 +100,7 @@ header nav {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   #hamburger-icon {
     display: none;
   }
@@ -119,6 +119,7 @@ header nav {
 
   nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
   }
 
@@ -129,6 +130,10 @@ header nav {
     font-size: 1rem;
     margin-right: 2rem;
     color: white;
+  }
+
+  ul button {
+    margin-right: 2rem;
   }
 
   ul a:hover {
