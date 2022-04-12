@@ -32,15 +32,8 @@ const items = [
       "https://raw.githubusercontent.com/sorted-hd/MY-FILES/main/xflix.png",
   },
   {
-    cardTitle: "TO-DO App",
-    cardDescription: "TO-DO App Made With React",
-    hostedLink: "",
-    gitLink: "",
-    imageLink: "",
-  },
-  {
     cardTitle: "Task Manager",
-    cardDescription: "An App To Manage Task Running On NodeJS",
+    cardDescription: "An App To Manage Task.",
     hostedLink: "",
     gitLink: "https://github.com/sorted-hd/task-manager.git",
     imageLink:
@@ -73,3 +66,30 @@ items.map((item) => {
 
   return projectCard.insertAdjacentHTML("beforeend", markup);
 });
+
+const card = document.querySelectorAll(".card");
+card.forEach((el) => {
+  el.addEventListener(
+    "mouseover",
+    function (event) {
+      event.stopPropagation();
+      event.currentTarget.style.backgroundColor = `#${getRGB()}`;
+    },
+    true
+  );
+});
+
+card.forEach((el) => {
+  el.addEventListener(
+    "mouseleave",
+    function (event) {
+      event.stopPropagation();
+      event.currentTarget.style.backgroundColor = `#111217`;
+    },
+    true
+  );
+});
+
+const getRGB = () => {
+  return Math.floor(Math.random() * 16777215).toString(16);
+};
