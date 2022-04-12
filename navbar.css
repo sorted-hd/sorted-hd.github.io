@@ -6,6 +6,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  z-index: 9;
 }
 
 header a {
@@ -64,7 +65,7 @@ header nav {
 .mobile-menu {
   background-color: black;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 6vh;
   left: 0;
   height: calc(100vh - 6vh);
@@ -72,6 +73,7 @@ header nav {
   margin: 0;
   list-style: none;
   padding: 0%;
+  /* z-index: 9; */
 }
 
 .mobile-menu li {
